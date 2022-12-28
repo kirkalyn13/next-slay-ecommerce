@@ -10,8 +10,9 @@ const SIGNUP = `/signup`
 export default function App({ Component, pageProps, ...appProps }: AppProps) {
   // Import Boostrap JS
   useEffect(() => {
-    import("bootstrap/dist/js/bootstrap.min.js")
+    import("bootstrap")
   },[])
+  
   // No Layout Rendered on Login Page
   if ([LOGIN, SIGNUP].includes(appProps.router.pathname)) return <Component {...pageProps} />;
 
