@@ -74,16 +74,24 @@ const Footer = () => {
           <h5 className="fw-light mb-3 text-light">Follow Us</h5>
           <ul className="list-unstyled d-flex">
             <li className="text-decoration-none text-light fs-4 me-4">
+            <Link href="https://www.facebook.com" className="text-white text-decoration-none">
               <FaFacebook/>
+            </Link>
             </li>
             <li className="text-decoration-none text-light fs-4 me-4">
+              <Link href="https://www.instagram.com" className="text-white text-decoration-none">
               <FaInstagram/>
+              </Link>
             </li>
             <li className="text-decoration-none text-light fs-4 me-4">
-              <FaTwitter/>
+              <Link href="https://www.twitter.com" className="text-white text-decoration-none">
+                <FaTwitter/>
+              </Link>
             </li>
             <li className="text-decoration-none text-light fs-4 me-4">
-              <FaPinterest/>
+              <Link href="https://www.pinterest.com" className="text-white text-decoration-none">
+                <FaPinterest/>
+              </Link>
             </li>
           </ul>
         </div>

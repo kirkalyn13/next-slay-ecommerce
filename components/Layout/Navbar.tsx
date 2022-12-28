@@ -1,6 +1,7 @@
 
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { FaSearch, FaCartPlus, FaHeart } from 'react-icons/fa'
 
 const Navbar = () => {
@@ -8,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg py-4 bg-light fixed-top">
     <div className="container d-flex align-items-center">
       <Link className="navbar-brand fs-3 mt-0 d-flex align-items-center" href="#">
-        <img src="/logo.png" alt="logo" className="img-fluid me-2 "/>
+        <Image src="/logo.png" alt="logo" className="img-fluid me-2 " width={50} height={50}/>
         <span className="mb-2">Slay.Ph</span>
       </Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

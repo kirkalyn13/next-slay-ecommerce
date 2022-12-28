@@ -1,4 +1,23 @@
 import React from 'react'
+import PopularItem from './PopularItem'
+
+const topRated = [
+  {id: 1, name: "Blue Shirt", price: "20.00", src: "/images/top_rated_1.jpg"},
+  {id: 2, name: "Blue Watch", price: "20.00", src: "/images/top_rated_2.jpg"},
+  {id: 3, name: "Red Jacket", price: "20.00", src: "/images/top_rated_3.jpg"},
+]
+
+const bestSelling = [
+  {id: 4, name: "Coat", price: "17.00", src: "/images/best_selling_1.jpg"},
+  {id: 5, name: "Black Sleeves", price: "17.00", src: "/images/best_selling_2.jpg"},
+  {id: 6, name: "Grey Shirt", price: "17.00", src: "/images/best_selling_3.jpg"},
+]
+
+const onSale = [
+  {id: 7, name: "Blue Bag", price: "10.00", src: "/images/on_sale_1.jpg"},
+  {id: 8, name: "Black Jacket", price: "10.00", src: "/images/on_sale_2.jpg"},
+  {id: 9, name: "Bluack Shoes", price: "10.00", src: "/images/on_sale_3.jpg"},
+]
 
 const Popular = () => {
   return (
@@ -12,111 +31,15 @@ const Popular = () => {
         <div className="row">
           <div className="col-md-6 col-lg-4 g-3 row">
             <h3 className="fs-5">Top Rated</h3>
-            <div className="d-flex align-items-start justify-content-start">
-              <img
-                src="images/top_rated_1.jpg"
-                alt="top-rated-1"
-                className="img-fluid rounded w-25 pe-3"
-              />
-              <div className="description">
-                <p className="mb-0">Blue Shirt</p>
-                <span>$20.00</span>
-              </div>
-            </div>
-            <div className="d-flex align-items-start justify-content-start">
-              <img
-                src="images/top_rated_2.jpg"
-                alt="top-rated-2"
-                className="img-fluid rounded w-25 pe-3"
-              />
-              <div className="description">
-                <p className="mb-0">Blue Shirt</p>
-                <span>$20.00</span>
-              </div>
-            </div>
-            <div className="d-flex align-items-start justify-content-start">
-              <img
-                src="images/top_rated_3.jpg"
-                alt="top-rated-3"
-                className="img-fluid rounded w-25 pe-3"
-              />
-              <div className="description">
-                <p className="mb-0">Blue Shirt</p>
-                <span>$20.00</span>
-              </div>
-            </div>
+            {topRated.map(item => <PopularItem key={item.id} name={item.name} price={item.price} src={item.src}/>)}
           </div>
           <div className="col-md-6 col-lg-4 g-3 row">
             <h3 className="fs-5">Best Selling</h3>
-            <div className="d-flex align-items-start justify-content-start">
-              <img
-                src="images/best_selling_1.jpg"
-                alt="best-selling-1"
-                className="img-fluid rounded w-25 pe-3"
-              />
-              <div className="description">
-                <p className="mb-0">Blue Shirt</p>
-                <span>$20.00</span>
-              </div>
-            </div>
-            <div className="d-flex align-items-start justify-content-start">
-              <img
-                src="images/best_selling_2.jpg"
-                alt="best-selling-2"
-                className="img-fluid rounded w-25 pe-3"
-              />
-              <div className="description">
-                <p className="mb-0">Blue Shirt</p>
-                <span>$20.00</span>
-              </div>
-            </div>
-            <div className="d-flex align-items-start justify-content-start">
-              <img
-                src="images/best_selling_3.jpg"
-                alt="best-selling-3"
-                className="img-fluid rounded w-25 pe-3"
-              />
-              <div className="description">
-                <p className="mb-0">Blue Shirt</p>
-                <span>$20.00</span>
-              </div>
-            </div>
+            {bestSelling.map(item => <PopularItem key={item.id} name={item.name} price={item.price} src={item.src}/>)}
           </div>
           <div className="col-md-6 col-lg-4 g-3 row">
             <h3 className="fs-5">On Sale</h3>
-            <div className="d-flex align-items-start justify-content-start">
-              <img
-                src="images/on_sale_1.jpg"
-                alt="on-sale-1"
-                className="img-fluid rounded w-25 pe-3"
-              />
-              <div className="description">
-                <p className="mb-0">Blue Shirt</p>
-                <span>$20.00</span>
-              </div>
-            </div>
-            <div className="d-flex align-items-start justify-content-start">
-              <img
-                src="images/on_sale_2.jpg"
-                alt="on-sale-2"
-                className="img-fluid rounded w-25 pe-3"
-              />
-              <div className="description">
-                <p className="mb-0">Blue Shirt</p>
-                <span>$20.00</span>
-              </div>
-            </div>
-            <div className="d-flex align-items-start justify-content-start">
-              <img
-                src="images/on_sale_3.jpg"
-                alt="on-sale-3"
-                className="img-fluid rounded w-25 pe-3"
-              />
-              <div className="description">
-                <p className="mb-0">Blue Shirt</p>
-                <span>$20.00</span>
-              </div>
-            </div>
+            {onSale.map(item => <PopularItem key={item.id} name={item.name} price={item.price} src={item.src}/>)}
           </div>
         </div>
       </div>

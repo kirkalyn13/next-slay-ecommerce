@@ -108,6 +108,17 @@
   height: 50px;
   width: 10%;
   outline: none;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background: white;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.btn-filter-active {
+  height: 50px;
+  width: 10%;
+  outline: none;
   border: none;
   color: white;
   background: var(--primary-color);
@@ -115,7 +126,7 @@
   transition: all 0.4s;
 }
 
-.btn-filter:hover, .btn-accent:hover {
+.btn-filter:hover, .btn-accent:hover, .btn-filter-active:hover {
   background-color: var(--accent-color);
   color: black;
   border: white;

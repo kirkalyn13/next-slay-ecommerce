@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 const Signup = () => {
   return (
@@ -8,7 +9,7 @@ const Signup = () => {
         <div className="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-5">
           <div className="auth-card">
           <div className="p-3 mt-3 d-flex justify-content-center">
-              <img src="/logo.png" alt="Site Icon" height="100px" width="100px"/>
+            <Image src="/logo.png" alt="Site Icon" height={100} width={100}/>
               <span id="brand-name" className="signup-title fw-bold fs-1 pt-3 mx-2">Slay.Ph</span>
             </div>
             <div className="row">

@@ -1,16 +1,20 @@
 import Link from "next/link"
+import Image from "next/image"
 
-interface blogCardProps {
+interface BlogCardProps {
   title: string,
   summary: string,
   author: string,
   src: string,
 }
 
-const BlogCard = ({title, summary, author, src}: blogCardProps) => {
+const BlogCard = ({title, summary, author, src}: BlogCardProps) => {
   return (
     <div className="col-md-6 col-lg-4 card border-0 my-3">
-      <img src={src} alt="Blog 1" />
+      <div className="container">
+        <Image src={src} alt="blog" className="rounded" width={320} height={220}/>
+      </div>
+      {/* <img src={src} alt="Blog 1"/> */}
       <div className="card-body px-0">
         <h4 className="card-title">
           {title}
