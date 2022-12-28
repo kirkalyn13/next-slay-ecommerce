@@ -16,7 +16,7 @@ const bestSelling = [
 const onSale = [
   {id: 7, name: "Blue Bag", price: "10.00", src: "/images/on_sale_1.jpg"},
   {id: 8, name: "Black Jacket", price: "10.00", src: "/images/on_sale_2.jpg"},
-  {id: 9, name: "Bluack Shoes", price: "10.00", src: "/images/on_sale_3.jpg"},
+  {id: 9, name: "Black Shoes", price: "10.00", src: "/images/on_sale_3.jpg"},
 ]
 
 const Popular = () => {
