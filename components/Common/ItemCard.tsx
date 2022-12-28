@@ -16,7 +16,7 @@ const ItemCard = ({name, price, src, isSale, isFave, rating}: ItemCardProp) => {
           <div className="card">
             <div className="card-body rounded border border-1 text-center">
             <div className="collection-img position-relative">
-                <Image src={src} alt="item" className="rounded" width={250} height={300}/>
+                <Image src={src} alt="item" className="rounded item-img" width={300} height={320}/>
                 { isSale ? 
                 <span
                   className="bg-warning position-absolute d-flex align-items-center justify-content-center text-white">
@@ -36,7 +36,7 @@ const ItemCard = ({name, price, src, isSale, isFave, rating}: ItemCardProp) => {
               </div>
               <p className="fs-5 mb-1">{name}</p>
               <p className="fs-5 fw-bold">${price}</p>
-              <button className="btn-card m-auto d-block fs-5">Add to Cart</button>
+              <button className="btn-card m-auto d-block fs-6">Add to Cart</button>
             </div>
           </div>
         </div>

@@ -12,21 +12,21 @@ const Hero = () => {
           <h2 className="">Best Collection</h2>
           <h1 className=" py-2 fw-bold">NEW ARRIVALS</h1>
           <button className="btn-accent">
-            <Link href="/login" className="text-decoration-none fw-bold text-light" type="button">SHOP NOW</Link>
+            <Link href="/login" className="text-decoration-none text-light px-2" type="button">SHOP NOW</Link>
           </button>
         </div>
         <div className="carousel-item text-center">
           <h2 className="">Best Price & Offer</h2>
           <h1 className=" py-2 fw-bold">NEW SEASON</h1>
           <button className="btn-accent">
-            <Link href="/login" className="text-decoration-none fw-bold text-light" type="button">BUY NOW</Link>
+            <Link href="/login" className="text-decoration-none text-light px-2" type="button">BUY NOW</Link>
           </button>
         </div>
         <div className="carousel-item text-center">
           <h2 className="">Best Time To Buy</h2>
           <h1 className=" py-2 fw-bold">SUMMER SALE</h1>
           <button className="btn-accent">
-            <Link href="/login" className="text-decoration-none fw-bold text-light" type="button">GET IT NOW</Link>
+            <Link href="/login" className="text-decoration-none text-light px-2" type="button">GET IT NOW</Link>
           </button>
         </div>
 
